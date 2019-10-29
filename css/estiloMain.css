@@ -1,0 +1,615 @@
+
+.foto1{
+    width: 100%;
+    height: auto;
+    display: inline;  
+}
+
+.desplegable{
+    font-size: 20px;
+    position: fixed;
+    height: 400px;
+    width: 1000px;
+    display: none;
+} 
+.desplegable li{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.lineadesplegable{
+    margin-top: 10px;
+    width: 250px;
+    border: 1px solid #FFA748;
+}
+
+.menu{
+    background: #0B2335;
+    height: 120px;
+    width: 100%;
+    color: #FFFFFF;
+    position: fixed;
+    text-align: center;
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.menu a{
+    font-size: 20px;
+    margin: 10px;  
+}
+.aMenu:hover{
+    color: #FFA748;
+}
+
+.botInicio{
+    position: fixed;
+    right: 155px;
+    margin-left: 18%;
+    margin-right: 20px;
+    border-radius: 20px;
+    background: #EFF0F1;
+    color: #0B2335;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.botInicio:hover{
+    border: 3px solid #D57A07;
+    color: #D57A07;
+}
+.botRegis{
+    position: fixed;
+    right: 25px;
+    background: #FFA748;
+    border-radius: 20px;
+    padding: 5px;
+    background: #FFA748;
+    width: 137px;
+}
+.botRegis:hover{
+    background: #ff8807;
+    border: 3px solid #FFA748;
+    color: #fff;
+}
+
+
+.botonMain{
+    position: fixed;
+    left: 10px;
+    background:#FFA748;
+    border: 3px solid #D57A07;
+    display: none;
+        
+}
+.botonMain:hover{
+    background: #D57A07;
+    border: 3px solid #FFA748;    
+}
+.primerPanel{
+    background-image: linear-gradient(
+     rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/genteestadioPeque%C3%B1a.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height:auto;
+    max-height: 970px;
+}
+.cajaPrincipal{
+    display: block;
+    justify-content: center;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;  
+   
+}
+.cajacentral{ 
+    display: inline-block;
+    text-align: center;
+    /*background: rgb(255, 167, 72,0.8);*/
+    padding-top: 400px;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    justify-content: center;
+   
+}
+
+.circulos{   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 190px;
+    padding-right: 190px;
+    padding-top: 100px;
+}
+.circulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    z-index: 00;
+    color: #FFA748;
+    border-radius: 150px;
+    border: 4px solid #FFA748;
+    text-align: center;
+    list-style: none;
+    margin: 10px;
+    background: #0B2335;
+    transition: all .2s ease-in-out;
+}
+
+.circulo:hover{
+     transform: scale(1.1);
+}
+
+.enunciados {   
+    position: relative;
+    width: 60%;
+    /*color: #0B2335;*/
+    color: #fff;
+    display: inline;
+    z-index: 9000;
+    text-align: left;
+    margin-left: 20px;
+}
+.enunciados h1{
+    margin-bottom: 30px;
+    font-size: 60px;
+    
+}
+.wsubrallada{
+    text-decoration: underline;
+    text-decoration-color: #FFA748;
+}
+.enunciados h4{
+   margin-bottom: 30px;
+    font-size: 20px;
+    letter-spacing: 4pt;
+}
+.enunciados h6{
+    font-size: 20px;
+    margin-bottom: 90px; 
+    letter-spacing: 2pt;
+}
+
+.botonU{
+    display:block;
+    width: 170px; 
+    text-align: center;
+    font-size: 23px;
+    background: #FFA748;
+    border-radius: 100px;
+    margin-top: 30px;
+    margin-bottom: 300px;
+    color: #fff;
+    padding: 5px;
+    transition-duration: 1s;
+}
+
+.fle{
+    margin-top: 6px;
+    margin-right:5px;
+    float: right;
+}
+.botonU:hover{
+     background:#ff8807;
+     color: #fff;
+     width: 230px; 
+}
+
+.resaltado{
+    color: #0B2335;
+    text-shadow:none;
+    font-size: 51px;
+}
+.subEnun{
+    width: 70%;
+    text-shadow: 2px 1px #FFA748;
+    text-align: center;
+    
+}
+.subEnun h3{
+    margin-top: 100px;      
+}
+.contdeTips{
+    
+    text-align: center;
+}
+.tip{ 
+    position:relative;
+    display: inline-block;
+    text-align: center;
+    border-radius: 9px;
+    background: #fff;
+    height: auto;
+    width:260px;
+    border: 4px solid #FFA748;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+.tip b{
+    font-size: 29px;
+}
+.tip a{
+    display:block;
+    color: #CA2E4D;
+    font-size: 25px;
+}
+.tip h6{
+    font-size: 25px;
+    color:#0B2335; 
+}
+.tip h4{
+    font-size: 22px;
+    color: #0B2335;
+}
+.cajaSuscrip{
+    border-top: 2px solid #FFA748;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.imgtipsterPremiun{
+    position:static;
+    margin-top: -75px;
+    width: auto;
+    height: 100px;
+    border-radius: 150px;
+    border: solid 5px #FFA748;
+   
+}
+.imgtipsterestandar{
+    margin-top: -45px;
+    width: auto;
+    height: 100px;
+    border-radius: 150px;
+    
+}
+.estrella{
+    display:inherit;
+    color: #FFA748;
+    font-size: 20px;
+}
+.azulPremiun{
+    height: 30px;
+    width: 100%;
+    display: block;
+    z-index: 10000;
+    text-shadow: none;
+      
+}
+
+/*_________segundo panel nuevo__________*/
+
+.SegundoPanel1{
+    height: auto;
+}
+.contTitu2panel{
+    display: block;
+    width: auto; 
+}
+.est{
+    font-size: 40px;
+    color: #CA2E4D;
+}
+.line{
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFA748;
+    height: 5px;
+    width: 400px;
+}
+.parte1{
+    background:#EFF0F1;
+    color: #0B2335;
+    height: auto;
+}
+.parte2{
+    background-image: linear-gradient(
+     rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../img/copa.jpg);
+    min-height: 400px;
+    height: auto;
+    padding-bottom: 100px;
+    background-attachment: fixed;
+    
+}
+.parte3{
+    height: 530px;
+}
+
+.contdeTips h3{
+    margin-top: 150px;
+}
+.linea{
+    display: block;
+    position: relative;
+    width: 100%;
+    background: #FFA748;
+    height: 5px;
+   
+    
+}
+
+
+/*SEGUNDO PANEL________________________________________________________________*/
+.SegundoPanel{
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(
+     rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/texture.jpg);    
+    text-align: center;
+    opacity: 2;
+}
+
+.PCaja1{
+   display: inline;
+   margin-left: auto;
+   margin-right: auto;
+   color: #fff;
+   font-size: 40px;
+   width: 80%; 
+   height: auto;
+   padding: 15px;
+   color: #fff;
+  
+}
+.linea{
+   position: relative;
+   top: 230px;
+   color: #fff;
+}
+.lista{
+    border: 3px solid #fff;
+    list-style: none;
+    border-radius: 100px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 40px;
+}
+.lista2{
+    border: 3px solid #fff;
+    list-style: none;
+    border-radius: 100px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 20px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+.lista b{
+    color: #FFA748;
+}
+
+/*___ FIN SEGUNDO PANEL________________________________________________________________*/
+
+/*__TERCER PANEL_____________________________________________________________________*/
+.tercerPanel{
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(
+     rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../img/graficosFondo.jpg);    
+   text-align: center; 
+    padding-bottom: 50px;
+    height: 100%;
+    padding-top: 50px;
+}
+.tercerPanel h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #fff;
+    
+}
+.tercerPanel b{
+    color: #FFA748;
+}
+.terPanelCajaCentral{   
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.terCajaTipst{
+    display: inline-block;
+    background: #FDFDFD;
+   
+    color: #CA2E4D;
+    font-size: 20px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+#nom {
+    color: #CA2E4D;
+    
+}
+.cajaG{
+    display: inline-block;
+    
+}
+tr{
+    background: #0B2335; 
+}
+tr p{
+    color: #FDFDFD;
+}
+
+.cajaG a{
+    margin: 30px;
+}
+.tabla{
+     width: 100%;
+}
+/*____CUARTO PANEL___________*/
+
+.cuartoPanel{
+    
+    padding-bottom: 30px;   
+    text-align: center; 
+    background-image: linear-gradient(
+     rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../img/copa.jpg); 
+    height: 937px;
+}
+
+
+
+/*_________MEDIA_________________________*/
+
+
+
+@media (max-width: 1482px) {
+     .enunciados h2{
+       margin-left: 50px;
+    } 
+    .subEnun{
+       margin-left: 50px;  
+    }
+    .botonUnir{
+        right: 60px;    
+    }
+    .cajaPrincipal{
+        width: 70%;
+    }
+    .circulos{
+        padding-left:10px;
+        padding-right: 10px;
+    }
+}
+@media(max-width:1274px){
+        .cajaPrincipal{
+        width: 80%;
+    }
+}
+
+@media (max-width: 1115px) {
+    
+    .menu{
+         text-align: left;
+         justify-content:flex-start;
+        
+    }
+   
+    .desplegable{
+        display:block;        
+    }
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+   
+}
+@media (max-width: 1030px){
+    .cont2part{
+      display: flex;
+        justify-content: center;  
+    }
+    .circulos{
+        width: 60%;
+    }
+}
+@media (max-width: 900px){
+     .botonMain{ 
+       display:block;  
+    }
+     .aMenu{
+       display: none;
+    }
+    .tip{
+       margin-left: 3px;
+       margin-right: 3px;
+       margin-top: 45px;
+    }
+    #t1{
+        display: none;
+       
+    }
+
+   
+    .parrafo{
+        font-size: 33px;
+    }
+      .lista2{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .enunciados{
+
+        text-align: center;
+    }
+    .botonU{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cajacentral{
+        padding-top: 200px;
+    }
+}
+
+@media (max-width: 705px){
+    .lista{
+        padding: 15px; 
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+  
+}
+
+/*__MEDIA GRAFICOS__________________*/
+
+  
+@media (max-width: 900px){
+    #g1{
+            display: block;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #g3{
+            display: block;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+           
+        }
+     .circulos{
+        width: 100%;
+    }
+   
+}
+
+@media (max-width: 630px){
+      .circulos{
+        justify-content: center;  
+        width: 100%;
+    }
+     .circulos{
+        padding-left:5px;
+        padding-right: 5px;
+    }
+}

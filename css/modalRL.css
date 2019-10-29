@@ -1,0 +1,185 @@
+.cerrarRegistro{
+    position: relative;
+    color: #fff;
+    top: -40px;
+}
+.moRL{
+    position: fixed;
+    display: none;
+    text-align: left;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    animation-name: modal;
+    animation-duration: 1s;
+    z-index: 10000;   
+}
+.flexibleRL{
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+}
+.contenidoRL{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 19px;
+    height: auto;
+    width: 650px;
+    padding-bottom: 20px;
+    z-index: 100000;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 17px 13px 32px -17px rgba(0,0,0,0.75);
+    -moz-box-shadow: 17px 13px 32px -17px rgba(0,0,0,0.75);
+    box-shadow: 17px 13px 32px -17px rgba(0,0,0,0.75);
+}
+.cabeceraModalRL{
+    background: #FFA748;
+    color: #fff;
+    height: 60px;
+    border-bottom: 2px solid #ff8807;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.cabeceraModalRL h3{
+   padding: 12px;
+}
+
+.cuerpoModalRL{
+    background: #fff;
+    padding: 30px;
+}
+.cuerpoModalRL input{
+    border-radius: 5px;    
+    margin-bottom: 10px;
+    
+}
+.colunIzq{
+    text-align: right;
+}
+.colunDer{
+    text-align:left;
+}
+.colunDer input{
+    width: 95%;
+}
+.cbox{
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+    
+}
+.recuContra{
+    text-align: center;
+}
+.contBoton{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.botModalInici{
+    padding-top: 2px;
+    width: 190px;
+    height: 40px;
+    background: #ff4d70;
+    color: #fff;
+    border: 1px solid #ff4d70; 
+    border-radius: 10px;
+    font-size: 23px;
+    box-shadow: 20px;
+    -webkit-box-shadow: 2px 3px 2px 0px #CA2E4D;
+    -moz-box-shadow: 2px 3px 2px 0px #CA2E4D;
+    box-shadow: 2px 3px 2px 0px #CA2E4D;
+}
+.botModalInici:hover{
+    background: #CA2E4D;
+}
+.recuContra a{
+    color: #CA2E4D;
+    font-size: 18px;
+}
+.cuentaNueva a{
+    color: #CA2E4D;
+    font-size: 23px;
+}
+.texInfo{
+    text-align: left;
+    font-size: 18px;
+}
+/*____botones de inicio_______________*/
+
+.botonesInicio{
+    position: absolute;
+    right: 0px;    
+   
+    float: right;
+    
+}
+.botonIniciaSesion{
+   float: right; 
+   background: #CA2E4D;
+   color: #fff;
+   width: 113px;
+   height: auto;
+   margin-top: 15px;
+   margin-right: 20px;
+   text-align: center;
+   padding: 2px;
+   font-size: 18px;
+   border-radius: 5px;
+   border: 1px solid #ff4d70;
+   box-shadow: 20px;
+   -webkit-box-shadow: 2px 3px 2px 0px #CA2E4D;
+   -moz-box-shadow: 2px 3px 2px 0px #CA2E4D;
+   box-shadow: 2px 3px 2px 0px #CA2E4D;
+}
+.botonIniciaSesion:hover{
+    background: #CA2E4D;
+}
+.botonRegistrarse {
+   float: right;
+   background: #fff;
+   color: #0B2335;
+   width: 113px;
+   height: auto;
+   margin-top: 15px;
+   margin-right: 20px;
+   text-align: center;
+   padding: 2px;
+   font-size: 18px;
+   border-radius: 5px;
+   border: 1px solid #0B2335;
+   box-shadow: 20px;
+   -webkit-box-shadow: 2px 3px 2px 0px #b3b3b3;
+   -moz-box-shadow: 2px 3px 2px 0px #b3b3b3;
+   box-shadow: 2px 3px 2px 0px #b3b3b3;
+   
+}
+.botonRegistrarse:hover{
+    background: #e3e3e3;
+}
+.iconosSesionIniciada{
+    display: none;
+}
+
+
+@keyframes modal{
+    from{opacity: 0;}
+    to{opacity: 1; }
+}
+
+/*___MEDIA____*/
+
+@media (max-width: 750px){
+    
+    .contenidoRL{
+       width: 450px;
+    }
+    
+    
+}

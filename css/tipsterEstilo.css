@@ -1,0 +1,214 @@
+.filtro{
+    background:#FFA748; 
+    height: auto;
+    padding-left:20px;
+    border-bottom: 2px solid #ff8807;
+    
+}
+.filtro a{
+    cursor:pointer;
+}
+.filtroToggle{
+    text-align: center;
+    color: #000;    
+}
+.botToggle{
+    width: 50px;    
+    line-height: 50px;
+    background: blue;
+    font-weight: bold;
+    color: #fff;
+    position:absolute;
+    top:400px;
+}
+
+.contenidofiltros{
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+ .combo{
+     display: inline-block;
+     width: 350px;
+     
+    }
+
+
+.apliFiltro{
+    margin-top: 10px;
+   color: #CA2E4D;
+}
+select{
+    border-radius: 10px;
+}
+
+
+.flechas{
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.combo select{
+    display: block;
+    width: 95%;
+    margin: 10px;
+    font-size: 20px;
+    
+}
+.cajacentral{
+    background:#EFF0F1; 
+}
+
+
+/*tips_____________________*/
+.imgtipsterPremiun{    
+   
+    display: inline-block;
+    width: auto;
+    height: 100px;
+    border-radius: 150px;
+    border: solid 5px #FFA748;
+    
+}
+.tip{ 
+    display: inline-block;
+    background: #fff;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: solid 1px #bfbfbf;
+    margin-top: 20px;    
+    margin-bottom: 10px;
+}
+
+.nomAndResumen{
+    position: relative;
+    display:inline-block;
+    text-align: left;
+    font-size: 24px;
+    color: #CA2E4D;   
+}
+.nomAndResumen b{
+    margin-left: 10px;
+    margin-right: auto;
+    font-size: 29px;  
+}
+.nomAndResumen p{
+    display: block;
+}
+.nomAndResumen span{
+    color: #0B2335;
+}
+
+.premiun{
+    color:#0B2335; 
+}
+.conteTabla{
+    position: relative;
+    display:inline-block;
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+   
+}
+
+.duo{
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.btSubs{
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    border-radius: 10px;
+    color: #0B2335;
+    border: 3px solid #0B2335;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+.btSegi{
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    background: #0B2335;
+    width: 150px;
+    border-radius: 10px;
+    color: #FFA748;
+    border: 3px solid #FFA748;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+.contBotones{
+    position: relative;
+    display:inline-block;
+    text-align: center;
+}
+.tablaTipsters{ 
+    text-align: center;
+       
+}
+.tablaTipsters b{
+    font-size: 25px;
+}
+
+
+.estrella{
+    display:inherit;
+    color: #FFA748;
+    font-size: 20px;
+}
+
+/*__________________MEDIA_______________________*/
+
+
+@media (max-width: 1200px){
+    .contBotones{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 15px;
+    }
+    
+    .nomAndResumen{
+        text-align: center;
+    }
+    .btSubs{
+       margin-bottom: 0px; 
+        margin-right: 10px;
+    }
+    .btSegi{
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .tabla{
+        width: 95%;
+    }
+    .combo{
+        display: inline-block;
+        width: 200px;
+    }
+   
+}
+@media (max-width: 930px){
+    
+    .combo{
+        width: 150px;
+    }
+}
+
+
+
+

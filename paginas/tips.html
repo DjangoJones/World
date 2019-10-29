@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>World of Tipsters</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/modalRL.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <!--chrat.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+</head>
+<body>
+    <div id="miModalLogin" class="moRL">
+          <div id="flexible" class="flexibleRL">
+               <div id="contenidoM" class="contenidoRL">
+                   <div class="cabeceraModalRL">
+                       <h3>Inícia Sesion</h3>
+                       <span class="cerrar" id="cerrarmodal"></span>
+                   </div>
+                   <div class="cuerpoModalRL">
+                    <div class="container-fluid"> 
+                          <div class="row">
+                               <div class="col-lg-4 colunIzq">
+                                   <i class="fas fa-at"></i>        
+                                   <span>Email:</span>
+                               </div >
+                               <div class="col-lg-8 colunDer">
+                                   <input type="text" placeholder="Email">
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col-lg-4 colunIzq">
+                                   <i class="fas fa-key"></i>     
+                                   <span>Contraseña:</span>
+                               </div >
+                               <div class="col-lg-8 colunDer">
+                                   <input type="text" placeholder="Contraseña">
+                               </div>
+                           </div>
+                         
+                          <div class="row">
+                              <div class="col-lg-12 contBoton">
+                                  <div class="botModalInici"><a href="#">   Inícia Sesion</a></div>    
+                              </div>
+                              <div class="col-lg-12">
+                                  <input type="checkbox" class="cbox" id="cbox">
+                                  <label for="cbox">Recuerdame</label>
+                              </div>
+                              <div  class="col-lg-12 recuContra">
+                                  <a href="#">¿Se te olvidó tu contraseña?</a>
+                                  <a href="#">¿Olvidó su correo electrónico? </a>
+                              </div>
+                              <div class="col-lg-12 cuentaNueva">
+                                  <a href="#">Crea una cuenta nueva</a>
+                              </div>
+                          </div>
+                   </div>
+                   </div>
+                </div> 
+            </div>              
+        </div>    
+    <div id="miModalRegistro" class="moRL">
+          <div id="flexibleR" class="flexibleRL">
+               <div id="contenidoR" class="contenidoRL">
+                   <div class="cabeceraModalRL">
+                       <h3>Regístrate</h3>
+                       <span class="cerrarRegistro" id="cerrarmodalRegistro"></span>
+                   </div>
+                   <div class="cuerpoModalRL">
+                    <div class="container-fluid">
+                         <div class="row">
+                               <div class="col-lg-5 colunIzq">
+                                   <i class="fas fa-at"></i>        
+                                   <span>Nombre:</span>
+                               </div >
+                               <div class="col-lg-7 colunDer">
+                                   <input type="text" placeholder="Email">
+                               </div>
+                           </div> 
+                          <div class="row">
+                               <div class="col-lg-5 colunIzq">
+                                   <i class="fas fa-at"></i>        
+                                   <span>Email:</span>
+                               </div >
+                               <div class="col-lg-7 colunDer">
+                                   <input type="text" placeholder="Email">
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col-lg-5 colunIzq">
+                                   <i class="fas fa-key"></i>     
+                                   <span>Contraseña:</span>
+                               </div >
+                               <div class="col-lg-7 colunDer">
+                                   <input type="text" placeholder="Contraseña">
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col-lg-5 colunIzq">
+                                   <i class="fas fa-key"></i>     
+                                   <span> Repetir Contraseña:</span>
+                               </div >
+                               <div class="col-lg-7 colunDer">
+                                   <input type="text" placeholder="Contraseña">
+                               </div>
+                           </div>
+                         
+                          <div class="row">
+                             <div class="col-lg-12 texInfo">
+                                  <input type="checkbox" class="cbox" id="cbox">
+                                  <label for="cbox">Acepta los <a href="#">términos del servicio.</a></label>
+                              </div>
+                              <div class="col-lg-12 texInfo">
+                                  <label for="cbox"><input type="checkbox" class="cbox" id="cbox">Acepto recibir correos electrónicos con nuevas promociones.</label>
+                              </div>
+                              <div class="col-lg-12 contBoton">
+                                  <div class="botModalInici"><a href="#">Registrar cuenta</a></div>    
+                              </div>
+                              <div  class="col-lg-12 recuContra">
+                                  <a href="#">Ya tienes una cuenta</a>
+                              </div>
+                          </div>
+                   </div>
+                   </div>
+                </div> 
+            </div>              
+        </div>
+<!--__________________________FIN NODALES REGISTRO LOGIN____________________________________-->            
+    <div class="caja2 menu-fixed">
+     <div class="botonesInicio">
+         <div class="botonRegistrarse" id="btregistrate"><a href="#"><b>Regístrate</b></a></div>
+         <div class="botonIniciaSesion" id="btiniciasesion"><a href="#"><b>Inícia sesion</b></a></div>
+     </div>
+      <!--contenedor visible al iniciar sesion-->
+       <div class="iconosSesionIniciada">
+            <a href="" class="item"><img src="../img/torrenteMini.png" alt="usuario" class="usufoto"></a>     
+            <a href="" class="item"><i class="fas fa-envelope"></i></a>
+            <a href="" class="item"><i class="fas fa-exclamation"></i></a>
+            <a href="" class="item"><i class="fas fa-user"></i></a>
+        </div> 
+        <!--____-->  
+        <div class="caja">        
+            <button type="button" id="sidebarCollapse" class="btn btn-info boton">
+                <i class="fas fa-align-justify"></i>
+            </button>
+        </div>
+    </div>
+<!--____MENU DESPLEGABLE____contiene todo a todo los conponentes__________________________-->  
+    <div class="wrapper">
+        <nav id="sidebar">
+            <ul class="list-unstyled components componentes">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Tips</a>    
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                         <li>
+                            <a href="../paginas/tips.html">Todos</a>
+                        </li>
+                        <li>
+                            <a href="#">Football</a>
+                        </li>
+                        <li>
+                            <a href="#">Baloncesto</a>
+                        </li>
+                        <li>
+                            <a href="#">Boxeo</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../paginas/tipsters.html">Tipsters</a>
+                </li>
+                <li>
+                    <a href="../paginas/casasApuestas.html">Casas</a>
+                </li>
+                <li>
+                    <a href="#">Ofertas</a>
+                </li>
+                <li>
+                    <a href="#">Opiniones</a>
+                </li>
+            </ul>    
+        </nav> 
+              <div class="container-fluid cajacentral">
+                  <div class="row">
+                       <div class="col-md-12 col-lg-8 cajaTip">
+                         <div class="encabezado">
+                             <h3>ULTIMOS TIPS PUBLICADOS</h3>
+                         </div>
+    <!--___________________TIP_______________________________________________________ -->
+                         <div class="row">
+                          <div class="col-lg-12 tip" id=tip>      
+                                 <div class="col-lg-12 tip1">
+                                     <a href=""><img src="../img/torrente.jpg" alt="usuario" class="fotoTip"></a>
+                                     <a href="" class="nomUsuTip">FlacoTipster</a>
+                                     <span href="" class="nomUsuTip">Yield 20%</span>
+                                 </div>
+                                 <div class="col-lg-12 cuerpoTip" id="cuerpoTip">
+                                    <div class="tienpoPick"><h7>Hace 2 minutos</h7></div>                          <div class="partidoTip">
+                                         <a href=""><h3>Barcelona - Almeria</h3></a>
+                                     </div>
+                                     <div class="ganadorTip">
+                                         <a href="" class="stringApuesta">Zamboanga Valientes +1.5 (Spread) (34-29) @ 1.8</a>
+                                        <div>
+                                           <h6 class="stakeTip">8/10</h6>
+                                           <a href="" class="icoCasaApues">Bet365</a>
+                                        </div>       
+                                     </div>
+                                     <div>
+                                        <i class="fas fa-futbol icoTip"></i> 
+                                        <p class="icoTip">Football / Ger. Regionalliga / Kick off: 11 Jul 2019, 17:00</p>     
+                                     </div>
+                                     <div class="lineLikeComent "> 
+                                        <buttom type="button" class="botonLike">Like</buttom> 
+                                         <div class="likesComets">
+                                          <p>Comentarios</p>
+                                         
+                                         </div>
+                                     </div>
+                                     <div class="cajacomentarios">
+                                         <textarea type="text" rows="1" cols="50" class="txtareacomen"></textarea> 
+                                         <buttom type="button" class="botonComent">Publicar</buttom> 
+                                     </div>
+                                 </div>   
+                            </div>
+                          </div>
+ <!--_____________________FIN TIP____________________________________________________________________--> 
+ <!--___________________TIP_______________________________________________________ -->
+                         <div class="row">
+                          <div class="col-lg-12 tip" id=tip>      
+                                 <div class="col-lg-12 tip1">
+                                     <a href=""><img src="../img/torrente.jpg" alt="usuario" class="fotoTip"></a>
+                                     <a href="" class="nomUsuTip">FlacoTipster</a>
+                                     <span href="" class="nomUsuTip">Yield 20%</span>
+                                 </div>
+                                 <div class="col-lg-12 cuerpoTip" id="cuerpoTip">
+                                    <div class="tienpoPick"><h7>Hace 2 minutos</h7></div>                          <div class="partidoTip">
+                                         <a href=""><h3>Barcelona - Almeria</h3></a>
+                                     </div>
+                                     <div class="ganadorTip">
+                                         <a href="" class="stringApuesta">Zamboanga Valientes +1.5 (Spread) (34-29) @ 1.8</a>
+                                        <div>
+                                           <h6 class="stakeTip">8/10</h6>
+                                           <a href="" class="icoCasaApues">Bet365</a>
+                                        </div>       
+                                     </div>
+                                     <div>
+                                        <i class="fas fa-futbol icoTip"></i> 
+                                        <p class="icoTip">Football / Ger. Regionalliga / Kick off: 11 Jul 2019, 17:00</p>     
+                                     </div>
+                                     <div class="lineLikeComent "> 
+                                        <buttom type="button" class="botonLike">Like</buttom> 
+                                         <div class="likesComets">
+                                          <p>Comentarios</p>
+                                         
+                                         </div>
+                                     </div>
+                                     <div class="cajacomentarios">
+                                         <textarea type="text" rows="1" cols="50" class="txtareacomen"></textarea> 
+                                         <buttom type="button" class="botonComent">Publicar</buttom> 
+                                     </div>
+                                 </div>   
+                            </div>
+                          </div>
+ <!--_____________________FIN TIP____________________________________________________________________--> 
+<!--___________________TIP_______________________________________________________ -->
+                         <div class="row">
+                          <div class="col-lg-12 tip" id=tip>      
+                                 <div class="col-lg-12 tip1">
+                                     <a href=""><img src="../img/torrente.jpg" alt="usuario" class="fotoTip"></a>
+                                     <a href="" class="nomUsuTip">FlacoTipster</a>
+                                     <span href="" class="nomUsuTip">Yield 20%</span>
+                                 </div>
+                                 <div class="col-lg-12 cuerpoTip" id="cuerpoTip">
+                                    <div class="tienpoPick"><h7>Hace 2 minutos</h7></div>                          <div class="partidoTip">
+                                         <a href=""><h3>Barcelona - Almeria</h3></a>
+                                     </div>
+                                     <div class="ganadorTip">
+                                         <a href="" class="stringApuesta">Zamboanga Valientes +1.5 (Spread) (34-29) @ 1.8</a>
+                                        <div>
+                                           <h6 class="stakeTip">8/10</h6>
+                                           <a href="" class="icoCasaApues">Bet365</a>
+                                        </div>       
+                                     </div>
+                                     <div>
+                                        <i class="fas fa-futbol icoTip"></i> 
+                                        <p class="icoTip">Football / Ger. Regionalliga / Kick off: 11 Jul 2019, 17:00</p>     
+                                     </div>
+                                     <div class="lineLikeComent "> 
+                                        <buttom type="button" class="botonLike">Like</buttom> 
+                                         <div class="likesComets">
+                                          <p>Comentarios</p>
+                                         
+                                         </div>
+                                     </div>
+                                     <div class="cajacomentarios">
+                                         <textarea type="text" rows="1" cols="50" class="txtareacomen"></textarea> 
+                                         <buttom type="button" class="botonComent">Publicar</buttom> 
+                                     </div>
+                                 </div>   
+                            </div>
+                          </div>
+ <!--_____________________FIN TIP____________________________________________________________________-->     
+                       </div> 
+  <!--_____________________COLUMNA DERECHA___________________________________________________________--> 
+                       <div class="col-md-12 col-lg-4 publi">
+                               <!--____PUBLICIDAD______________________________-->
+                                <a href=""><img src="../img/publi.jpg" alt="publicidad" class="publiFoto"></a>
+                                <!--____FIN PUBLICIDAD______________________________-->
+<!--____________________________TOP TIPSTERS____________________________________________________________-->
+                                <div class="topTipsters">
+                                    <div class="cajaTitulo">
+                                        <h5>Top Tipster Premiun</h5>
+                                    </div>
+                                    <div class="fotoNombreCaja">
+                                        <div class="numPosiTop"><span>1</span></div>
+                                        <a href=""><img src="../img/fary.jpg" alt="" class="fotoTop"></a>
+                                        <div class="nombTipTop">
+                                           <a href=""><b>FaryToritoTips</b></a>
+                                           <p>Yield: 30%</p>
+                                            <div class="segidores"><p ><b>300</b> Segidores</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="fotoNombreCaja">
+                                        <div class="numPosiTop"><span>2</span></div>
+                                        <a href=""><img src="../img/torrenteMini.png" at="" class="fotoTop"></a>
+                                        <div class="nombTipTop">
+                                           <a href=""><b>FlakoTipster</b></a>
+                                           <p>Yield: 28%</p>
+                                            <div class="segidores"><p ><b>100</b> Segidores</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="fotoNombreCaja">
+                                        <div class="numPosiTop"><span>3</span></div>
+                                        <a href=""><img src="../img/leticia.jpg" alt="" class="fotoTop"></a>
+                                        <div class="nombTipTop">
+                                           <a href=""><b>SuperLety</b></a>
+                                           <p>Yield: 20%</p>
+                                            <div class="segidores"><p ><b>150</b> Segidores</p></div>
+                                        </div>
+                                    </div> 
+                                </div>
+<!--____________________________FIN TOP TIPSTERS____________________________________________________________-->   <!--____________________________MEJORES SERVICIOS____________________________________________________________-->                                
+                                  <div class="mejoresServicios">
+                                    <div class="cajaTitulo">
+                                         <h5>Servicos mejor pagados</h5>  
+                                    </div>
+                                    <div class="grafica1"> 
+                                         <canvas id="myChart"></canvas>
+                                         <a href=""><b>FlakoTipster</b></a>
+                                    </div>
+                                    <div class="grafica2"> 
+                                         <canvas id="myChart2"></canvas>
+                                         <a href=""><b>SuperLeti</b></a>
+                                    </div>
+                                    <div class="grafica3"> 
+                                         <canvas id="myChart3"></canvas>
+                                         <a href=""><b>FaryToritoTips</b></a>
+                                    </div>
+                                    <div class="grafica4"> 
+                                         <canvas id="myChart4"></canvas>
+                                         <a href=""><b>FlakoTipster</b></a>
+                                    </div>
+                                     
+                                </div>
+<!--____________________________FIN MEJORES SERVICIOS__________________________________________________________-->  
+<!--____________________________OPINIONES CASAS APUESTAS_____________________________________________________-->    
+                                <div class="cajaOpiCasasApu">
+                                    <div class="cajaTitulo">
+                                         <h5>Valoraciones Casas Apuestas</h5>  
+                                    </div>
+                                <div class="contenidoOpini">  
+                                    <div class="row">
+                                            <div class="col-sm-6 col-md-6 col-lg-12 colunCasaApu">
+                                                <img src="../img/18bet.png" alt="usuario" class="fotoCasas">
+                                                    <div class="estrellas">
+                                                                <a href="#"><b>18Bet</b></a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                    </div>
+                                            </div>
+                                            <div class=" col-sm-6 col-md-6 col-lg-12 colunCasaApu">
+                                                <img src="../img/asianconect.png" alt="usuario" class="fotoCasas">
+                                                <a href="">
+                                                    <div class="estrellas">
+                                                                <b>asianconect</b>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                     </div>        
+                                     <div class="row">       
+                                            <div class=" col-sm-6 col-md-6 col-lg-12 colunCasaApu">
+                                                <img src="../img/sportmarket.png" alt="usuario" class="fotoCasas">
+                                                <a href="">
+                                                    <div class="estrellas">
+                                                                <b>sport market</b>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a> 
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 col-lg-12 colunCasaApu">
+                                            <div class="colunCasaApu">
+                                                <img src="../img/pinnacle.png" alt="usuario" class="fotoCasas">
+                                                <a href="">
+                                                    <div class="estrellas">
+                                                                <b>pinnacle</b>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                           </div>
+                                      </div> 
+                                      <div class="row">            
+                                            <div class="col-sm-6 col-md-6 col-lg-12 colunCasaApu">
+                                                <img src="../img/bet365.png" alt="usuario" class="fotoCasas">
+                                                <a href="">
+                                                    <div class="estrellas">
+                                                                <b>bet365</b>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 col-lg-12 colunCasaApu">
+                                                <img src="../img/bet-ibc.jpeg" alt="usuario" class="fotoCasas">
+                                                <a href="">
+                                                    <div class="estrellas">
+                                                                <b>bet/ibc</b>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                                <a href="">★</a>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                      </div>    
+                                        
+                                 </div>      
+                                </div>
+    <!--____________________________FIN OPINIONES CASAS APUESTAS__________________________________________-->     <!--____________________________MEJORES YIELD_______________________________________________-->                               
+                                <div class="mejoresServicios">
+                                    <div class="cajaTitulo">
+                                         <h5>Tipster con mejor Yield</h5>  
+                                    </div>
+                                    
+                                    <div class="grafica5"> 
+                                         <canvas id="myChart5"></canvas>
+                                         <a href=""><b>FlakoTipster</b></a>
+                                    </div>
+                                    <div class="grafica6"> 
+                                         <canvas id="myChart6"></canvas>
+                                         <a href=""><b>SuperLeti</b></a>
+                                    </div>
+                                    <div class="grafica7"> 
+                                         <canvas id="myChart7"></canvas>
+                                         <a href=""><b>FaryToritoTips</b></a>
+                                    </div>
+                                    <div class="grafica8"> 
+                                         <canvas id="myChart8"></canvas>
+                                         <a href=""><b>FlakoTipster</b></a>
+                                    </div>
+                                     
+                                </div>
+    <!--____________________________ FIN MEJORES YIELD_______________________________________________-->          
+     <!--____________________________PROMO TORNEO TIPS_______________________________________________-->                                                    
+                                    <div class="promoCampeonato"> 
+                                        <img src="../img/promo.jpg" alt="" class="imgPromo">
+                                        <ul class="TipEnunciado">
+                                            <il>
+                                                <h2><B>CAMPEONATO TIPSTERS</B></h2>
+                                            </il>
+                                            <li>
+                                                <h3>Proximamente</h3>
+                                            </li>
+                                        </ul> 
+                                    </div>           
+                           </div>
+    <!--___________________FIN COLUMNA DERECHA_____________________________________________________-->       
+                </div>    
+            </div>
+    </div>
+      
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/chart.js"></script>
+    <script src="../js/modalRL.js"></script>
+   
+  
+ 
+    
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+
+.cajacentral{
+    background:#EFF0F1; 
+}
+.encabezadoApuestas{
+    text-align: center;
+    height: auto;
+    color: #fff;
+    background: #FFA748;
+    border-bottom: 2px solid #ff8807;
+    padding: 10px;
+}
+
+/*tips_____________________*/
+.imgtipsterPremiun{    
+    display: inline-block;
+    width: auto;
+    height: 100px;
+     
+}
+.cajonBet{
+    margin-top: -30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: solid 3px #ffe418;
+    margin-right: 20px;
+    background: #14805e;
+    
+}
+.cajonPinn{
+    margin-top: -30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom:  solid 3px #ff5500;
+    background: #0b1423;
+    margin-left: 20px;
+}
+.cajonBetIBC{
+    margin-top: -30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: solid 3px #ffe418;
+    margin-right: 20px;
+    background: #004b6b;
+    
+}
+.cajonBWIN{
+    margin-top: -30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: solid 3px #ffe418;
+    margin-left: 20px;
+    background: #000;
+}
+
+.tip{ 
+    display: inline-block;
+    height: auto;
+    
+}
+
+.nomAndResumen{
+    position: relative;
+    display:inline-block;
+    text-align:center;
+    font-size: 24px;
+    color: red;
+    
+}
+.nomAndResumen b{
+    margin-left: 10px;
+    margin-right: auto;
+    font-size: 29px;  
+}
+.nomAndResumen p{
+    display: block;
+}
+.nomAndResumen span{
+    color: #0B2335;
+}
+.conteTabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    
+}
+
+.contValoraciones{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;    
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    color: #F9FF47;
+}
+.contValoraciones b{
+    margin-left: 10px;
+    color: #fff;
+    font-size: 25px;    
+}
+.contBotones{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;    
+    height:inherit;
+    text-align: center;
+}
+.contBotones h2{
+  color: #ffe418;  
+    margin-top: 10px;
+}
+.contBotones h5{
+     color: #fff;  
+    margin-top: 10px;
+}
+.botonOpiniones{
+    margin-top: 10px;
+    display: inline-block;
+    border: 3px solid #fff;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+.botonOpiniones:hover{
+    background: rgb(191, 191, 191,0.5);
+}
+
+/*__________________MEDIA_______________________*/
+
+
+@media (max-width: 991px){
+    .cajonBet{
+        margin-right: 0px;
+       
+    }
+    .cajonPinn{
+        margin-left: 0px;
+         margin-top: 40px;
+        
+    }
+    .cajonBetIBC{
+       margin-right: 0px;
+    }
+    .cajonBWIN{
+       margin-left: 0px;
+         margin-top: 40px; 
+    }
+}
+@media (max-width: 930px){
+
+}
+
+
+
+

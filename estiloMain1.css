@@ -1,0 +1,503 @@
+body{
+    
+    background-image: linear-gradient(
+     rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/genteestadioPeque%C3%B1a.jpg);
+}
+.foto1{
+    width: 100%;
+    height: auto;
+    display: inline;  
+}
+
+.desplegable{
+    font-size: 20px;
+    position: fixed;
+    height: 400px;
+    width: 1000px;
+    display: none;
+} 
+.desplegable li{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.lineadesplegable{
+    margin-top: 10px;
+    width: 250px;
+    border: 1px solid #FFA748;
+}
+
+.menu{
+    background: #0B2335;
+    height: 70px;
+    width: 100%;
+    color: #FFFFFF;
+    position: fixed;
+    text-align: center;
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.menu a{
+    font-size: 20px;
+    margin: 10px;  
+}
+
+.botInicio{
+    position: fixed;
+    right: 140px;
+    margin-left: 15%;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    justify-content: center;
+    align-items: center;
+}
+.botInicio:hover{
+    border: 3px solid #D57A07;
+    color: #D57A07;
+}
+.botRegis{
+    position: fixed;
+    right: 10px;
+    background: #FFA748;
+    border-radius: 5px;
+    border: 3px solid #D57A07;
+}
+.botRegis:hover{
+    background: #0B2335;
+    border: 3px solid #FFA748;
+    color: #D57A07;
+}
+.botonMain{
+    position: fixed;
+    left: 10px;
+    background:#FFA748;
+    border: 3px solid #D57A07;
+    display: none;
+        
+}
+.botonMain:hover{
+    background: #D57A07;
+    border: 3px solid #FFA748;    
+}
+.cajaPrincipal{
+    display: block;
+    justify-content: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.cajacentral{ 
+    display: inline-block;
+    text-align: center;
+    background: #FFA748;
+    width: 100%;
+    height: 937px;
+    z-index: 0;
+    justify-content: center;
+    
+}
+.circulos{   
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+   
+}
+.circulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    z-index: 00;
+    color: #FFA748;
+    border-radius: 150px;
+    border: 4px solid #FFA748;
+    text-align: center;
+    list-style: none;
+    color: #FFA748;
+    margin: 10px;
+    background: #0B2335;
+    transition: all .2s ease-in-out;
+}
+
+.circulo:hover{
+     transform: scale(1.2);
+}
+
+.enunciados{ 
+    position: relative;
+    width: 60%;
+    color: #0B2335;
+    display: inline;
+    z-index: 9000;
+  
+}
+.parrafo{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    font-size: 3px;
+  
+}
+
+.enunciados h3{
+    margin-top: 140px;
+    font-size: 40px;
+    text-shadow: 2px 2px #FFA748;
+    text-align: center;
+}
+.resaltado{
+    color: #0B2335;
+    text-shadow:none;
+    font-size: 51px;
+}
+.subEnun{
+    width: 70%;
+    text-shadow: 2px 1px #FFA748;
+    text-align: center;
+    
+}
+.subEnun h3{
+    margin-top: 100px;      
+}
+.tipestandar{
+    float: left;
+    display: inline-block;
+    border-radius: 9px;
+    background: #fff;
+    height: 200px;
+    width:150px;
+    margin-top: 70px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+.tipestandar a{
+    display: inline-block;
+    color: #CA2E4D;
+    text-shadow:none;
+    font-size: 19px;
+}
+.tipestandar h6{
+    color:#0B2335; 
+}
+.tip{ 
+    position:static;
+    display: inline-block;
+    text-align: center;
+    border-radius: 9px;
+    background: #fff;
+    height: 260px;
+    width:210px;
+    border-top: solid 5px #0B2335;
+    margin-top: 78px;
+    margin-left: 40px;
+    margin-right: 40px;    
+}
+.tip a{
+    display:block;
+    color: #CA2E4D;
+    font-size: 25px;
+}
+.tip h6{
+    color:#0B2335; 
+}
+.tip h4{
+    font-size: 22px;
+    color: #0B2335;
+}
+.cajaSuscrip{
+    border-top: 2px solid #FFA748;
+    padding-top: 15px;
+   
+}
+
+.imgtipsterPremiun{
+    position:static;
+    margin-top: -75px;
+    width: auto;
+    height: 100px;
+    border-radius: 150px;
+    border: solid 5px #FFA748;
+   
+}
+.imgtipsterestandar{
+    margin-top: -45px;
+    width: auto;
+    height: 100px;
+    border-radius: 150px;
+    
+}
+.estrella{
+    display:inherit;
+    color: #FFA748;
+    font-size: 20px;
+}
+.azulPremiun{
+    height: 30px;
+    background: #0B2335;
+    display: block;
+    z-index: 10000;
+    border-bottom: solid 5px #FFA748;
+    text-shadow: none;
+      
+}
+
+.botonU{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px; 
+    text-align: center;
+    font-size: 29px;
+    background: #ff8807;
+    border-radius: 100px;
+    margin-top: 30px;
+    color: #fff;
+    border: 3px solid #0B2335;
+    padding: 2px;
+}
+.botonU:hover{
+     background: #0B2335;
+     color: #fff;
+}
+
+/*SEGUNDO PANEL________________________________________________________________*/
+.SegundoPanel{
+    width: 100%;
+    height: 937px;
+    background: #FFF;
+    background-image: linear-gradient(
+     rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/texture.jpg);    
+    text-align: center;
+    opacity: 2;
+}
+.PCaja1{
+   display: inline-block;    
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   top: 230px;
+   color: #fff;
+   font-size: 40px;
+   border:5px solid #fff; 
+   width: auto; 
+   height: auto;
+   border-radius: 100px;
+   padding: 15px;
+   color: #fff;
+  
+}
+.linea{
+   position: relative;
+   top: 230px;
+   color: #fff;
+}
+.lista{
+  list-style: none;  
+}
+.lista b{
+    color: #FFA748;
+}
+.v{
+    border: 2px solid #fff;
+    background: #fff;
+    width: 1px;
+    height: 100px;
+  
+}
+/*___ FIN SEGUNDO PANEL________________________________________________________________*/
+
+/*__TERCER PANEL_____________________________________________________________________*/
+.tercerPanel{
+    width: 100%;
+    height: 937px;
+    background-image: linear-gradient(
+     rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/graficosFondo.jpg);    
+   text-align: center;    
+    
+ 
+}
+.tercerPanel h2{
+    display: inline-block;
+    margin-top: 150px;
+    color: #fff;
+    font-size: 45px
+}
+.tercerPanel b{
+    color: #FFA748;
+   
+}
+
+.tercerCentral{
+    display: inline-block;
+    margin-top: 20px; 
+    width: 90%;
+    height: auto;
+    border:3px solid #FFA748;
+    
+   
+}
+.cajaGrafi{
+     background: #fff;
+     position: relative;
+     display: inline-block;
+     width: 90%;
+     height: auto;    
+     z-index: 10;
+     margin-top: 60px;    
+     margin-bottom: 30px;
+     border: 4px solid #FFA748;    
+       
+}
+.cajaGrafi a{
+   display:block;   
+}
+.decoracion{
+    position: absolute;
+    height: 65px;
+    width: 100%;;
+    background: #0B2335;
+}
+.imgTerPanel{
+    display: block;
+    border-radius: 150px;
+    width: 60%;
+    
+    border: 5px solid #FFA748;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.cajaIzquierda{ 
+    float: left;
+    display: inline-block;
+    width: 15%;
+    position:relative;
+    z-index: 10;
+    text-align: center;
+   
+}
+.nomb{
+    font-size: 20px;
+   
+}
+.cajaDerecha{
+    position:relative;  
+    padding-right: 10px; 
+    width: 100%;
+    height: auto;
+    z-index: 5;
+   
+}
+.cajaDerecha ul{
+    display: inline-block;
+    width: 20%;
+    height:100%;
+    list-style: none;
+    font-size: 20px;
+  
+}
+.grafica{
+    margin-top: 20px;
+} 
+
+/*_________MEDIA_________________________*/
+
+@media (max-width: 1482px) {
+   
+    .enunciados h2{
+       margin-left: 50px;
+    } 
+    .subEnun{
+       margin-left: 50px;  
+    }
+
+    
+    .botonUnir{
+        right: 60px;    
+    }
+    .cajaPrincipal{
+        width: 70%;
+    }
+}
+@media(max-width:1274px){
+        .cajaPrincipal{
+        width: 80%;
+    }
+}
+
+@media (max-width: 1115px) {
+    
+    .menu{
+         text-align: left;
+         justify-content:flex-start;   
+    }
+   
+    .desplegable{
+        display:block;        
+    }
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+     .cajaPrincipal{
+        width: 100%;
+    }
+}
+@media (max-width: 900px){
+     .botonMain{ 
+       display:block;  
+    }
+     .aMenu{
+       display: none;
+    }
+    .tip{
+       margin-left: 3px;
+       margin-right: 3px;
+       margin-top: 45px;
+    }
+}
+
+
+/*__MEDIA GRAFICOS__________________*/
+
+@media (max-width: 1280px){
+    
+    .cajaDerecha ul{
+         width: 35%; 
+       
+    }
+    .cajaDerecha{
+         margin-top: 50px;
+        float: right;
+      
+    }
+    .cajaIzquierda{
+        display: inline-block;
+        height: 30px;
+        float: left;
+       
+    }
+    
+    #cajaGrafi2{
+        display: none;
+    }
+    
+}
+    
+
